@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+using namespace std;
+class student{
+private:
+  int rollno,std;
+  string name;
+public:
+  void setRollno(int n){
+    this.rollno=n;
+  }
+  void setStd(int n){
+    this.std=n;
+  }
+  void setName(string s){
+    this.name=s;
+  }
+  int getRollno(){
+    return this.rollno;
+  }
+  int getStd(){
+    return this.std;
+  }
+  string getName(){
+    return this.name;
+  }
+};
+int main(){
+  student s;
+  int rollno,std;
+  string name;
+  cout<<"Helllo\n";
+  cout<<s.getRollno()<<" , "<<s.getStd()<<" , "<<s.getName()<<" , "<<endl;
+  cout<<"Enter rollno,std,name:-\n";
+  cin>>rollno>>std>>name;
+  s.setRollno(rollno);
+  s.setStd(std);
+  s.setName(name);
+  cout<<s.getRollno()<<" , "<<s.getStd()<<" , "<<s.getName()<<" , "<<endl;
+
+}
